@@ -571,7 +571,7 @@ Rinse and repeat.
 ```csharp
 public enum Currency
 {
-    DNK,
+    DKK,
     EUR,
     USD,
     GBP
@@ -587,7 +587,7 @@ public record Money(Currency Currency, decimal Amount);
 
 Money eur = new(Currency.EUR, 42);
 
-Money dnk = eur with { Currency = Currency.DNK, Amount = eur.Amount * 7.6m };
+Money dkk = eur with { Currency = Currency.DKK, Amount = eur.Amount * 7.6m };
 
 ```
 
