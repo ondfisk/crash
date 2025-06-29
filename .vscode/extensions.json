@@ -1,12 +1,8 @@
 {
 	"recommendations": [
 		"davidanson.vscode-markdownlint",
-		"esbenp.prettier-vscode",
 		"marp-team.marp-vscode",
-		"mechatroner.rainbow-csv",
-		"ms-dotnettools.csharp",
 		"ms-dotnettools.csdevkit",
-		"streetsidesoftware.code-spell-checker",
-		"tomoki1207.pdf"
+		"streetsidesoftware.code-spell-checker"
 	]
 }
