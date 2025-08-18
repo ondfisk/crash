@@ -5,13 +5,6 @@
     "files.autoSave": "afterDelay",
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
-    "cSpell.words": [
-        "dotnet",
-        "Flintheart",
-        "Glomgold",
-        "nameof",
-        "Rockerduck"
-    ],
     "github.copilot.enable": {
         "*": false
     }

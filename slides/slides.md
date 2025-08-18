@@ -33,10 +33,11 @@ Microsoft Danmark
 
 ![bg right:35%](images/portrait.jpg)
 
-Senior Cloud Solution Architect @ Microsoft (2013-)
-Associate Professer @ ITU (2014-)
+International Speaker
+Chief Disruptor @ Microsoft (2013-)
+Associate Professor @ ITU (2014-)
 
-M[]().Sc. IT, ITU (2012)
+M&#8203;.Sc. IT, ITU (2012)
 Thesis: *Forecalc – Developing a core spreadsheet implementation in F♯*
 
 ---
@@ -277,6 +278,8 @@ The application should display `Hello, World!` when run.
 The application should display `Hello, <input>!` when run with `<input>` as the first command line argument.
 
 The application should crash with an `ArgumentOutOfRangeException` if run with more than one command line argument.
+
+Actually, don't throw exceptions, you are not willing to catch... Change the last requirement to exit with an error message instead (maybe exit code 1 as well).
 
 ---
 
