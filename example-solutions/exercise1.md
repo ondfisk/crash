@@ -27,9 +27,10 @@ using System.Reflection;
 
 namespace Exercise1.Tests;
 
+[TestClass]
 public class UnitTest1
 {
-    [Fact]
+    [TestMethod]
     public void Main_given_no_arguments_writes_Hello_World()
     {
         // Arrange
@@ -45,7 +46,7 @@ public class UnitTest1
         Assert.Equal("Hello, World!", output.GetStringBuilder().ToString().Trim());
     }
 
-    [Fact]
+    [TestMethod]
     public void Main_given_Brian_as_argument_writes_Hello_Brian()
     {
         // Arrange
@@ -61,7 +62,7 @@ public class UnitTest1
         Assert.Equal("Hello, Brian!", output.GetStringBuilder().ToString().Trim());
     }
 
-    [Fact]
+    [TestMethod]
     public void Main_given_multiple_arguments_throws_ArgumentOutOfRangeException()
     {
         // Arrange

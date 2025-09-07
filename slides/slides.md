@@ -279,7 +279,9 @@ The application should display `Hello, <input>!` when run with `<input>` as the 
 
 The application should crash with an `ArgumentOutOfRangeException` if run with more than one command line argument.
 
-Actually, don't throw exceptions, you are not willing to catch... Change the last requirement to exit with an error message instead (maybe exit code 1 as well).
+...
+
+On second thought, don't throw exceptions, you are not willing to catch... Change the last requirement to exit with an error message instead (maybe exit code 1 as well).
 
 ---
 
@@ -910,13 +912,11 @@ Part 4, 5, 6, 7, and 8
 # Create a C♯ console app with a test library
 
 ```bash
-dotnet new install xunit.v3.templates
-
 mkdir MyApp
 cd MyApp
 
 dotnet new console -o src/MyApp
-dotnet new xunit3 -o tests/MyApp.Tests
+dotnet new mstest -o tests/MyApp.Tests --sdk --test-runner MSTest
 
 dotnet new sln
 dotnet sln add src/MyApp
@@ -939,6 +939,7 @@ dotnet outdated -u
 ```csharp
 namespace Namespace;
 
+[Attribute]
 public class Class
 {
     private string _field;
@@ -949,7 +950,7 @@ public class Class
         
     public int AutoProperty { get; set; }
         
-    public Class() { }
+    public Class() { } // Constructor
 
     public string InstanceMethod(string parameter)
     {
@@ -1013,9 +1014,10 @@ public class Ticker
     public Ticker(int start = 0) => Counter = start;
 }
 
+[TestClass]
 public class TickerTests
 {
-    [Fact]
+    [TestMethod]
     public void Increment_when_called_increases_Counter_by_1()
     {
         // Arrange
@@ -1025,7 +1027,7 @@ public class TickerTests
         sut.Increment();
 
         // Assert
-        sut.Counter.Should().Be(42);
+        Assert.AreEqual(42, sut.Counter);
     }
 }
 ```

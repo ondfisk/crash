@@ -1,11 +1,5 @@
 # Notes
 
-## xUnit v3
-
-```pwsh
-dotnet new install xunit.v3.templates
-```
-
 ## Testing `Main`
 
 Make `Program` class visible:
@@ -17,7 +11,7 @@ public partial class Program {}
 Add test:
 
 ```csharp
-[Fact]
+[TestMethod]
 public void Main_given_no_arguments_writes_Hello_World()
 {
     // Arrange
@@ -30,7 +24,7 @@ public void Main_given_no_arguments_writes_Hello_World()
     entryPoint.Invoke(null, [input]);
 
     // Assert
-    Assert.Equal("Hello, World!", output.GetStringBuilder().ToString().Trim());
+    Assert.AreEqual("Hello, World!", output.GetStringBuilder().ToString().Trim());
 }
 ```
 

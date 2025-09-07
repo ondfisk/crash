@@ -24,7 +24,7 @@ public static bool Exists(int[] numbers, int number)
     return found;
 }
 
-[Fact]
+[TestMethod]
 public void Exists_given_empty_list_returns_false()
 {
     // Arrange
@@ -38,7 +38,7 @@ public void Exists_given_empty_list_returns_false()
     Assert.False(result);
 }
 
-[Fact]
+[TestMethod]
 public void Exists_given_1_2_3_4_5_and_42_returns_false()
 {
     // Arrange
@@ -52,7 +52,7 @@ public void Exists_given_1_2_3_4_5_and_42_returns_false()
     Assert.False(result);
 }
 
-[Fact]
+[TestMethod]
 public void Exists_given_1_2_3_4_5_and_3_returns_true()
 {
     // Arrange
@@ -88,7 +88,7 @@ public static int[] Evens(int[] numbers)
     return [.. result];
 }
 
-[Fact]
+[TestMethod]
 public void Evens_given_1_2_3_4_5_returns_2_4()
 {
     // Arrange
@@ -125,13 +125,13 @@ public static int Smallest(int[] numbers)
     return result;
 }
 
-[Fact]
+[TestMethod]
 public void Smallest_given_empty_list_throws_ArgumentException()
 {
     Assert.Throws<ArgumentException>(() => ArrayFunctions.Smallest([]));
 }
 
-[Fact]
+[TestMethod]
 public void Smallest_given_1_2_3_4_5_returns_1()
 {
     // Arrange
@@ -163,7 +163,7 @@ public static int[] Unique(int[] numbers)
     return [.. result];
 }
 
-[Fact]
+[TestMethod]
 public void Unique_given_1_1_2_3_1_3_returns_1_2_3()
 {
     // Arrange
@@ -195,7 +195,7 @@ public static Duck[] OlderThan(Duck[] ducks, int age)
     return [.. result];
 }
 
-[Fact]
+[TestMethod]
 public void OlderThan_given_Ducks_and_60_returns_Flintheart_and_Magica()
 {
     // Arrange
