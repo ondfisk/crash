@@ -33,7 +33,7 @@ Test exceptions:
 ```csharp
 // Assert
 var exception = Assert.Throws<TargetInvocationException>(() => entryPoint.Invoke(null, [input]));
-Assert.IsType<ArgumentException>(exception.InnerException);
+Assert.IsInstanceOfType<ArgumentException>(exception.InnerException);
 ```
 
 ## Data

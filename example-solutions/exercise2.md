@@ -35,7 +35,7 @@ public void Exists_given_empty_list_returns_false()
     var result = ArrayFunctions.Exists(numbers, number);
 
     // Assert
-    Assert.False(result);
+    Assert.IsFalse(result);
 }
 
 [TestMethod]
@@ -49,7 +49,7 @@ public void Exists_given_1_2_3_4_5_and_42_returns_false()
     var result = ArrayFunctions.Exists(numbers, number);
 
     // Assert
-    Assert.False(result);
+    Assert.IsFalse(result);
 }
 
 [TestMethod]
@@ -63,7 +63,7 @@ public void Exists_given_1_2_3_4_5_and_3_returns_true()
     var result = ArrayFunctions.Exists(numbers, number);
 
     // Assert
-    Assert.True(result);
+    Assert.IsTrue(result);
 }
 ```
 
@@ -98,7 +98,7 @@ public void Evens_given_1_2_3_4_5_returns_2_4()
     var result = ArrayFunctions.Evens(numbers);
 
     // Assert
-    Assert.Equal([2, 4], result);
+    CollectionAssert.AreEqual([2, 4], result);
 }
 ```
 
@@ -141,7 +141,7 @@ public void Smallest_given_1_2_3_4_5_returns_1()
     var result = ArrayFunctions.Smallest(numbers);
 
     // Assert
-    Assert.Equal(1, result);
+    Assert.AreEqual(1, result);
 }
 ```
 
@@ -173,7 +173,7 @@ public void Unique_given_1_1_2_3_1_3_returns_1_2_3()
     var result = ArrayFunctions.Unique(numbers);
 
     // Assert
-    Assert.Equal([1, 2, 3], result);
+    CollectionAssert.AreEqual([1, 2, 3], result);
 }
 ```
 
@@ -207,6 +207,6 @@ public void OlderThan_given_Ducks_and_60_returns_Flintheart_and_Magica()
     var result = ArrayFunctions.OlderThan(ducks, age);
 
     // Assert
-    Assert.Equal([new("Magica De Spell", 302), new("Flintheart Glomgold", 66)], result);
+    CollectionAssert.AreEqual([new("Magica De Spell", 302), new("Flintheart Glomgold", 66)], result);
 }
 ```
