@@ -8,12 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MSTest" Version="4.0.2" />
+    <PackageReference Include="MSTest" Version="4.1.0" />
     <ProjectReference Include="..\..\src\Exercise2\Exercise2.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Testing.Extensions.CodeCoverage" Version="18.3.2" />
+    <PackageReference Include="Microsoft.Testing.Extensions.CodeCoverage" Version="18.4.1" />
     <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
   </ItemGroup>
 
