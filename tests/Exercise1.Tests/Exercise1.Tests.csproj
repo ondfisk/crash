@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MSTest" Version="4.1.0" />
+    <PackageReference Include="MSTest" Version="4.2.1" />
     <ProjectReference Include="..\..\src\Exercise1\Exercise1.csproj" />
   </ItemGroup>
 
