@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Testing.Extensions.CodeCoverage" Version="18.11.0" />
+    <PackageReference Include="Microsoft.Testing.Extensions.CodeCoverage" Version="18.11.2" />
     <Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
   </ItemGroup>
 
