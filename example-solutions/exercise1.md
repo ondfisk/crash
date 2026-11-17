@@ -16,8 +16,6 @@ if (args.Length > 1)
 }
 
 Console.WriteLine($"Hello, {input}!");
-
-public partial class Program {}
 ```
 
 ## `ProgramTests.cs`

@@ -2,12 +2,6 @@
 
 ## Testing `Main`
 
-Make `Program` class visible:
-
-```csharp
-public partial class Program {}
-```
-
 Add test:
 
 ```csharp
